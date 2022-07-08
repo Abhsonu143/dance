@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index/js')
+
+block style
+    style
+        include ../static/style.css
+        include ../static/contact.css
+
+block content
+    div.form
+        h1 Contact Us
+        form(action="/contact",method="post")
+            input(type="text", class="myInput", name="name",placeholder="Enter Your name")
+            input(type="text", class="myInput", name="age",placeholder="Enter Your age")
+            div
+                p Male:
+                input(type="radio",class="radio",name="gender")
+                p Female:
+                input(type="radio",class="radio",name="gender")
+            input(type="phone", class="myInput", name="phone",placeholder="Enter Your Phone No")
+            textarea(name="experiance",class="myInput",cols="30",rows="10",placeholder="Share your experiance" )
+            button.btn Submit 

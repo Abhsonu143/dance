@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title Welcome to dance.com
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul 
+                li #[a(href='/') Home]
+                li #[a(href='/') About]
+                li #[a(href='/') Services]
+                li #[a(href='/') Class Info]
+                li #[a(href='/') Contact Us]
+        section#introSection
+            div welcome to our Academy
+            div.small Eat Sleep Dance Repeat
+        section#sponserSection
+            h3 OUR SPONSERS
+        footer#footer
+            div.contact
+                ul
+                    li #[a(href='/') Home]
+                    li +91-8298879461
+                    li asabhya123@gmail.com
+            div.copy Copyright &copy; dance academy all right reserved
+        script
+            include ../static/index.js

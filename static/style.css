@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Oxygen&display=swap');
+/* font-family: 'Acme', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Oxygen', sans-serif; */
+*{
+    /* background-color: black; */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oxygen', sans-serif;
+}
+#navbar{
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    margin: 2px 20px;
+    padding: 3px 0px;
+    font-family: 'Acme', sans-serif;
+}
+#navbar li a:hover{
+    color: rgb(143, 101, 182);
+}
+
+/* intro section */
+#introSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 400px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-top: 100px;
+}
+#introSection div.small{
+    font-size: 1rem;
+    font-family: 'Lobster', cursive;
+}
+#introSection::before{
+    content: "";
+    background: url('/static/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 96%;
+    width: 100%;
+    opacity: 0.4;
+
+}
+/* sponser section */
+#sponserSection{
+    /* background-color: blue; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+#sponserSection h3{
+    padding-top: 5px;
+}
+#sponserSection::before{
+    content: "";
+    height: 420px;
+    width: 100%;
+    position: absolute;
+    top: 550px;
+    background: url('/static/bg2.jpg') no-repeat center center/cover;
+    opacity: 0.5;
+}
+
+/* footer section */
+#footer{
+    background-color: rgb(103, 93, 93);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.contact ul{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+.contact ul li{
+    list-style: none;
+    padding: 2px 20px;
+    text-align: center;
+}
+.contact ul li a{
+    text-decoration: none;
+    color: white;
+}
+.contact ul li a:hover{
+    color: rgb(157, 146, 146);
+}
+.copy{
+    text-align: center;
+}

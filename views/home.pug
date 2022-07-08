@@ -1,0 +1,15 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style
+    style
+        include ../static/style.css
+
+block content
+    section#introSection
+        div welcome to our Academy
+        div.small Eat Sleep Dance Repeat
+    section#sponserSection
+        h3 OUR SPONSERS
